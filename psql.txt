@@ -1,0 +1,29 @@
+// create database
+create database school;
+
+
+//create table
+create table students(id integer not null primary key , fname text not null , lname text not null , age integer not null);
+
+
+//delete table
+drop table students;
+
+//insert values
+insert into students(id,fname,lname,age) values(1,'himanshu', 'kumar',22);
+insert into students values(2,'sita','ram',25);
+insert into students values(3,'kabir','thapar',28);
+
+
+// where clause
+select fname from students where id=1;
+select * from students where id=1 OR fname='ankit';
+
+//update a row
+update students set fname ='ankita'where id=5;
+
+//Delete/Drop a row from table
+delete from students where id=5;
+
+//Order By Clause 
+select * from students order by age desc;
